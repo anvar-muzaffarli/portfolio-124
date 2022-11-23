@@ -27,4 +27,28 @@ header .nav-links a {
     color:#000;
 }
 
+.fa-bars-staggered {
+    display: none;
+}
 
+
+
+/* RESPONSIV NAVBAR */
+
+
+@media(max-width:768px) {
+    .fa-bars-staggered {
+        display: flex;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
