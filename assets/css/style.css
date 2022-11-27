@@ -1,3 +1,13 @@
+/* 
+----1---- HEADER
+----1---- INTROSECTION
+
+
+*/
+
+
+
+
 @import url('./reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
@@ -143,3 +153,31 @@ header .nav-links a {
 
 
 /* INTROSECTION END */
+
+
+/* TRUSTED BY SECTION START */
+/* child selector */
+.trusted-by-section > h6 {
+/* background-color: red; */
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+}
+
+.trusted-by-companies {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width:768px) {
+    .trusted-by-company:nth-child(1),
+    .trusted-by-company:nth-child(3) {
+        display: none;
+    }
+
+    .trusted-by-company:not(:first-child) {
+        display: none;
+    }
+}
+
+/* TRUSTED BY SECTION END */
